@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  
+</head>
+<body>
+    <style>
+        nav{
+           
+            display:flex;
+            justify-content:space-around ; 
+            gap: 0.25em;rem;
+            flex-wrap: wrap;
+          
+        }
+        .na{
+            text-decoration: none ; 
+            color: #ffffff; ;
+            font-family:popping;
+            font-size: 28px;
+            padding-top: 30px;
+        
+        }
+        .na:hover{
+            background-color:#34125b;; 
+         
+            color:#ffffff;
+            font-size: 30px;
+            border-radius: 50px;
+            padding:20px;
+            margin: 10px;
+        }
+        
+        .web{
+            font-size: 30px;
+        
+        }
+        
+        .l1{
+            padding-left: 100px;
+        }
+        .login{
+        width: 150px;
+        height: 50px;
+        background: #924dbf;
+        border-radius: 43px;
+        font-size: 25px;
+        color: #ffffff; 
+        }
+        .b1{
+            padding: 10px; 
+          
+        }
+        
+        .login:hover{
+            width: 150px;
+            height: 50px;
+            background: #e2dde6;
+            border-radius: 43px;
+            font-size: 30px;
+            color: #924dbf; 
+            border: 4px solid #ad8ad4;
+            box-shadow: 1px 1px 8px 7px rgb(132, 91, 193);
+        }
+            body {
+                font-family: popping;
+                background-color: #0f0529;
+                color: #861b86;
+                margin: 0;
+                padding: 0;
+                background-color: #0f0529;;
+                color: #ffffff;
+                font-family: Poppins,
+            }
+            .container {
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 50px;
+                position: relative;
+            }
+            .login1 {
+                color: #924dbf; 
+                font-size: 40px;
+            }
+            input[type="text"], input[type="password"], input[type="email"] ,.next {
+                box-shadow: 0 0 10px rgb(219, 63, 198);
+                margin-top: 10px;
+                padding: 10px;
+                width: 350px;
+                box-sizing: border-box;
+                border-radius: 6px;
+                background-color: transparent;
+                border: 2px solid #861b86;
+                color: #ffffff;
+                font-size: 16px;
+            }
+            .next {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: rgb(179, 102, 250);
+                border: none;
+                color: #ffffff;
+                font-family: Poppins, sans-serif;
+                font-size: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .rectangle-e {
+            position: relative;
+            margin: 0 0 0 0;
+            background: #5c2d92;
+            z-index: 19;
+            height: 45px;
+        }
+        
+            .signup-text {
+                color: white;
+            }
+            .signin-text {
+                color: violet;
+            }
+            .problems-text {
+                color: white;
+            }
+            .contact-text {
+                color: violet;
+            }
+           .next:hover {
+                background-color: #ffffff;
+                color: rgb(179, 102, 250);
+            }
+            p {
+                margin-top: 20px;
+                clear: both;
+            }
+            .background-image {
+                background-image: url(gauche.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: right;
+                position: absolute;
+                width: 30%; 
+                height: 100%;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                margin-top: 10%;
+            }
+            .right-image {
+                position: absolute;
+                right: 0;
+                z-index: -1;
+                width: 20%;
+            }
+           
+            .base{
+    background-color: #34125b;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap: 4rem;
+   flex-direction: row; 
+   padding: 50px;
+   padding-bottom: 40px;
+   font-size: 15px;
+}
+.ba{
+    text-decoration: none ; 
+    color: #ffffff; ;
+}
+.ba:hover{
+
+    background:#0f0529;
+    border-radius: 60px;
+    font-size: 25px;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px 5px rgb(183, 154, 226);
+}
+.info{
+    font-family: popping;
+    font-size: 20px;
+}
+.fin{
+    background-color:#924dbf ;
+    padding: 20px;
+    font-size: 20px;
+}
+        </style>
+        </head>
+        <body>
+            <nav>
+                <div class="web"><img src="logo h.png" width="65px" ><b>WebWork</b></div>
+                <a class="na" href="home.html">Home</a>  
+                <a class="na" href="why.html">Why Us</a>
+                <a class="na" href="ourteam.html">Our Team</a>
+                <a class="na" href="about.html">About</a>
+                <div class="b1"><a href="login.html"><button class="login" type="button"><b>LOGIN</b></button></a></div> 
+           <hr width="59%" >  
+            </nav>  
+        <img class="right-image" src="droite.png">
+        <div class="background-image"></div>
+        
+        <div class="container">
+            <h1 class="login1">LOGIN</h1>
+            <form action="#" method="POST">
+                <input type="text" name="username" placeholder="Enter your username">
+                <br>
+                <input type="password" name="password" placeholder="Enter your password">
+                <br>
+                <input type="email" name="email" placeholder="Enter your email">
+                <br>
+                <button class="next" type="submit"><b>Next -&gt;</b></button>
+            </form>
+        
+            <p class="signup-text">You don't have an account? <span class="signin-text">Sign in</span>.</p>
+            <p class="problems-text">Having problems? <span class="contact-text">Contact us.</span></p>
+        </div>
+        <br><br><br><br><br>
+        <section>
+            <div class="base">
+            <div>
+        <h1>Adresse</h1>
+        <img src="instg.png"  width="20px"> @WebWork <br> <br>
+        <img src="facb.png"  width="15px"> @WebWork <br><br>
+        <img src="mail.png"  width="20px"> WebWork@gmail.com <br>
+        </div>
+        <div>
+        <h1>Info</h1>
+        <p class="info">Lorem ipsum dolor sit amet consecte <br>
+            Nihil reiciendis laboriosam qui <br>
+            dolor doloribus veritatis <br>
+             voluptate.
+              </p>
+        </div>
+        <div>
+            <h1>Links</h1>
+            <a class="ba" href="home.html"><b>Home</b></a> 
+            <br> <br>
+            <a class="ba" href="why.html"><b>Why Us</b></a>
+            <br><br>
+            <a class="ba" href="ourteam.html"><b>Our Team</b></a>
+            <br><br>
+            <a class="ba" href="about.html"><b>About</b></a>
+        </div>
+        <div>
+        <h1>Subscribe</h1>
+        <button class="login" type="button"><b>Join Us</b></button>
+        </div>
+        
+        </div>
+        </section>
+        <footer>
+            <div class="fin">
+         <center><b>WebWork</b> <img src="final.png" width="15px"></center>
+        </div>
+        </footer>
+</body>
+</html>

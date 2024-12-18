@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="boxicons.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src=""></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">Portfo<span>lio.</span></a></div>
+     
+      <ul class="menu">
+        <li>
+            <a href="#home">
+                <button type="button" > 
+                    <span>Home</span>
+                    <span class="fa-solid fa-house"></span>
+                </button>
+            </a>
+        </li> 
+        <li>
+            <a href="#about">
+                <button type="button" > 
+                    <span>About</span>
+                    <span class="fa-solid fa-address-card"></span>
+                </button>
+            </a>
+        </li> 
+        <li>
+            <a href="#services">
+                <button type="button" > 
+                    <span>Services</span>
+                    <span class="fa-solid fa-sliders"></span>
+                </button>
+            </a>
+        </li> 
+        <li>
+            <a href="#portfolio">
+                <button type="button" > 
+                    <span>Portfolio</span>
+                    <span class="fa-solid fa-mountain-sun"></span>
+                </button>
+            </a>
+        </li> 
+        <li>
+            <a href="#contact">
+                <button type="button" > 
+                    <span>Contact</span>
+                    <span class="fa-solid fa-headset"></span>
+                </button>
+            </a>
+        </li> 
+    </ul>
+    <div class="menu-btn">
+        <i class="fas fa-bars"> </i>
+    </div>
+  </header>
+  <section class="home" id="home">
+    <div class="featured-text">
+    <div class="hello">
+    <p>Hello I'm déveloper</p>
+    </div>
+    <div class="featured-name">
+    <span id="SliderValue"></span>
+    </div>
+    <div class="featured-text-info">
+    <p>My name is nourhen I'm a web déveloper with over 3+ years of experience.
+    </div>
+    <div class="social_icons">
+        <a href="https://www.facebook.com/profile.php?id=100019174363455&locale=fr_FR"><i class="fab fa-facebook" style="color: crimson;"></i></a>
+        <a href="https://github.com/nourhen55" target="_blank">
+            <i class="fab fa-github" style="color: crimson;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nour-h%C3%A9n-788476337/"><i class="fab fa-linkedin" style="color: crimson;"></i></a>
+    </div>
+    </div>
+   <div class="home-img">
+    <img src="nourhen2.png" alt=""  >
+   </div>
+  </section>
+  <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-container">
+                <div class="about">
+                    <h1 class="title_h1">About Me</h1>
+                    <p>Étudiante en 3éme année de licence en science informatique, <br>
+                        je suis passionnée par le développement web et mobile.<br>
+                         Toujours curieuse et motivée, je suis actuellement en train <br>
+                          de perfectionner mes compétences en développement front-end <br>
+                          et back-end pour approfondir mes connaissances dans ces domaines.
+                    </p>
+                    <div class="about_social">
+                        <a href="#"><i class="fab fa-facebook" style="color: crimson;"></i></a>
+                        <a href="https://github.com/nourhen55" target="_blank">
+                            <i class="fab fa-github" style="color: crimson;"></i>
+                        </a>            <a href="#"><i class="fab fa-dribbble" style="color: crimson;"></i></a>
+                    </div>
+                </div>
+                <a href="cv.pdf" class="btn-b" id="download-cv">Download CV </a>
+                <div id="sliderValue"></div>
+
+            </div>
+        </div>
+    
+  </section>
+  <section class="services" id="services"> 
+    <h2 class="heading">My <span>Services</span></h2>
+    <div class="serv-content">
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web <br>Development</h2>
+                <p class="extra-text" style="display: none;" id="web"> </p>
+                <a href="web" class="learn-more">Learn more..</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend <br> Development</h2>
+                <p class="extra-text" style="display: none;">html, css, javascript, angular,vue.js</p>
+                <a href="" class="learn-more">Learn more..</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>Backend <br>Development</h2>
+                <p class="extra-text" style="display: none;">node.js,spring boot,javscript, fichier json</p>
+                <a href="" class="learn-more">Learn more..</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">My <span>Portfolio</span></h2>
+    <div class="portfolio-content">
+        <div class="row">
+            <!--SwConsulting-->
+            <a href="sw-master/src/"><img src="SWConsulting.png" alt="" ></a>
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>SW Consulting</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development</h4>
+            <h5>Développement d'une plateforme web pour la société SWConsulting à Beb Bhar, utilisant Vue.js, Node.js et Firebase</h5>
+
+        </div>
+                    <!--minihackaton-->
+
+        <div class="row">
+           <a href="mini hackaton/ac.html"> <img src="hack.png" alt="" ></a>
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>Mini Hackathon</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development</h4>
+            <h5>Participation à un mini hackathon de développement web, où le projet a été réalisé en HTML et CSS, remportant la première place </h5>
+        </div>
+                    <!--caffe-->
+
+        <div class="row">
+          <a href="cafee/home.html"> <img src="cafee.png" alt="" ></a> 
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>Cafee</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development</h4>
+            <h5>Développement d'un site web pour le club dans le cadre d'une compétition, réalisé avec HTML et CSS, et ayant obtenu une place gagnante</h5>
+        </div>
+                    <!--hopitale-->
+
+        <div class="row">
+           <a href="mini projet/index.html"> <img src="hopitale.png" alt="" ></a>
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>hopitale</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development</h4>
+            <h5>Réalisation d'un projet pour la matière de développement web à la faculté, en utilisant HTML et CSS pour la création du site</h5>
+        </div>
+         <!--FindMyHome-->
+        <div class="row">
+           <a href="my-angular-app/"> <img src="findmyhome.png" alt="" ></a>
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>findmyhome</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development</h4>
+            <h5>Développement d'un site web avec Angular pour le front-end, et un backend utilisant des services avec des fichiers .json pour la gestion des données</h5>
+        </div>
+        <!--java-->
+        <div class="row">
+            <a href="gestioncatalogue30/"> <img src="java.png" alt="" ></a>
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>produit technolo</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development</h4>
+            <h5>Développement d'une application web avec Eclipse et Spring Boot pour le backend, utilisant JSP pour l'interface, et XAMPP pour la gestion de la base de données</h5>
+        </div>
+        <!--portfolio-->
+        <div class="row">
+            <a href="../portfolio nour/index.html"> <img src="portfolio.png" alt="" ></a>
+            <div class="main-row">
+                <div class="row-text">
+                    <h5>produit technolo</h5>
+                </div>
+                <div class="row-icon">
+                    <i class="bx bxl-github"></i>
+                </div>
+            </div>
+            <h4>website development "portfolio"</h4>
+        </div>
+        </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+   <form action="#">
+    <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+    </div>
+    <div class="input-box">
+        <input type="number" placeholder="Phone Number">
+        <input type="text" placeholder="Subject">
+    </div>
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+  <input type="submit" value="Sen Message" class="btn-t">
+</form>
+  </section>
+  <footer class="footer">
+     <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100019174363455&locale=fr_FR"><i class="fab fa-facebook" style="color: crimson;"></i></a>
+        <a href="https://github.com/nourhen55" target="_blank">
+            <i class="fab fa-github" style="color: crimson;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nour-h%C3%A9n-788476337/"><i class="fab fa-linkedin" style="color: crimson;"></i></a>
+    </div>
+<p class="copyright">
+   &copy; CodeCreators | All Rights Reserved 
+</p>
+  </footer>
+
+</body>
+</html>d

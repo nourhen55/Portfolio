@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix de spécialité et de ville</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .select-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #436080;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2f465e;
+        }
+    </style>
+</head>
+<body>
+    <img src="5558f471e6a0a882b2283399325dc071.jpg" alt="Image de l'hôpital">
+    <div class="navbar-container">
+        <nav>
+            <a href="index.html">Accueil</a>
+        <a href="hopital.html">Hôpital</a>
+        <a href="spec.html">Spécialisation</a>
+        <a href="select.html">ton probleme</a>
+            <a href="con">Contact</a>
+            <div class="specialisation">
+                <button onclick="window.location.href='sing.html'">Sign Up</button>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Choisissez une spécialité médicale et une ville</h1>
+
+        <div class="select-container">
+            <label for="specialite">Spécialité médicale :</label>
+            <select id="specialite">
+                <option value="chirurgie">Chirurgie</option>
+                <option value="gynecologie">Gynécologie-obstétrique</option>
+                <option value="medecine_interne">Médecine interne</option>
+                <option value="pediatrie">Pédiatrie</option>
+                <option value="radiologie">Radiologie</option>
+                <option value="ophtalmologie">Ophtalmologie</option>
+                <option value="urologie">Urologie</option>
+                <option value="maladies_infectieuses">Maladies infectieuses</option>
+                <option value="dermatologie">Dermatologie</option>
+                <option value="orthopedie">Orthopédie</option>
+            </select>
+        </div>
+
+        <div class="select-container">
+            <label for="ville">Ville :</label>
+            <select id="ville">
+                <option value="ariana">Ariana</option>
+                <option value="beja">Béja</option>
+                <option value="ben arous">Ben Arous</option>
+                <option value="bizerte">Bizerte</option>
+                <option value="gabes">Gabès</option>
+                <option value="gafsa">Gafsa</option>
+                <option value="jendouba">Jendouba</option>
+                <option value="kairouan">Kairouan</option>
+                <option value="kasserine">Kasserine</option>
+                <option value="kebili">Kébili</option>
+                <option value="kef">Le Kef</option>
+                <option value="mahdia">Mahdia</option>
+                <option value="manouba">Manouba</option>
+                <option value="medenine">Médenine</option>
+                <option value="monastir">Monastir</option>
+                <option value="nabeul">Nabeul</option>
+                <option value="sfax">Sfax</option>
+                <option value="sidi bouzid">Sidi Bouzid</option>
+                <option value="siliana">Siliana</option>
+                <option value="sousse">Sousse</option>
+                <option value="tataouine">T

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réinitialisation du mot de passe</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label, input {
+            margin: 10px 0;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #436080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #436080;
+        }
+    </style>
+</head>
+<body>
+    <img src="5558f471e6a0a882b2283399325dc071.jpg" alt="Image de l'hôpital">
+    <div class="navbar-container">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="hopital.html">Hôpital</a>
+            <a href="spec.html">Spécialisation</a>
+            <a href="select.html">ton probleme</a>
+            <a href="#">Contact</a>
+            <div class="specialisation">
+                <button onclick="window.location.href='sing.html';">Sign Up</button>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Réinitialisation du mot de passe</h1>
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required onblur="verifmail()">
+            <div id="emailError" class="error"></div> <!-- Ajout de la div pour afficher les erreurs -->
+
+            <label for="code">Code :</label> <!-- Correction de l'attribut "for" -->
+            <input type="text" id="code" name="code" required>
+            <div id="passwordError" class="error"></div>
+
+            <label for="password">Nouveau mot de passe :</label> <!-- Correction de l'attribut "for" -->
+            <input type="password" id="password" name="password" required>
+            <div id="confirmPasswordError" class="error"></div>
+
+            <label for="confirmPassword">Confirmez le nouveau mot de passe :</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <div id="confirmPasswordError" class="error"></div>
+
+            <input type="submit" value="Réinitialiser">
+        </form>
+    </div>
+    <div class="contacte">
+        <table class="logo">
+            <tr spanclow="2"><h2>contact</h2></tr>
+            <tr>
+                <td><img src="logo/telephone.jpg"></td>
+                <td> 12345789</td>
+                <td><img src="logo/facebookbg.png" ></td>
+                <td> hospitaltunis</td>
+            </tr>
+            <tr>
+                <td><img src="logo/insta.jpg" ></td>
+                <td> hospitaltunis</td>
+                <td><img src="logo/emailbg.png" ></td>
+                <td> info@healthycare.com</td>
+            </tr>
+            
+        </table>
+    </div>
+    <script>
+        function verifmail() {
+            var email = document.getElementById('email').value;
+            var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!regex.test(email)) {
+                document.getElementById('emailError').innerHTML = "Veuillez entrer une adresse email valide.";
+            } else {
+                document.getElementById('emailError').innerHTML = ""; // Réinitialiser le message d'erreur
+            }
+        }
+
+        function validateForm() {
+            var code = document.getElementById('code').value;
+            var newPassword = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            var passwordError = document.getElementById('passwordError');
+            var confirmPasswordError = document.getElementById('confirmPasswordError');
+
+            if (code !== "0000") {
+                passwordError.innerHTML = "Le code est incorrect.";
+                return false;
+            } else {
+                passwordError.innerHTML = "";
+            }
+
+            if (newPassword.length < 6) {
+                confirmPasswordError.innerHTML = "Le mot de passe doit contenir au moins 6 caractères.";
+                return false;
+            } else {
+                confirmPasswordError.innerHTML = "";
+            }
+
+            if (newPassword !== confirmPassword) {
+                confirmPasswordError.innerHTML = "Les mots de passe ne correspondent pas.";
+                return false;
+            } else {
+                confirmPasswordError.innerHTML = "";
+            }
+
+            // Si tout est valide, effectuez la redirection ici
+            window.location.href='sing2.html';
+            return true;
+        }
+    </script>
+</body>
+
+</html>
